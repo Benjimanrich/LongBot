@@ -23,69 +23,69 @@ var games = {}
 //levels
 
 var levels = {
-1:"wc wh wh wh wc w R wv bg bg bg wc wc R wv bg bg bg bg wv R wc wc bg P bg wv R w wv bg bg bg wv R w wc wh wh wh wc #0", 
-2:"wc wh wh wh wh wc R wv bg bg bg bg wv R wv bg bg P bg wv R wv bg w w bg wv R wv bg bg bg bg wv R wc wh wh wh wh wc #0", 
-3:"wc wh wh wh wh wc R wv bg bg bg bg wv R wc wc bg P bg wv R w wv bg bg bg wv R w wc wc bg bg wv R w w wc wh wh wc #0", 
-4:"w w w wc wh wh wc R w wc wh wc bg bg wv R wc wc bg bg bg bg wv R wv P bg w w bg wv R wv bg bg w w bg wv R wc wc bg bg bg bg wv R w wc wh wh wh wh wc #0", 
-5:"w w w wc wh wh wc R w w w wv bg bg wv R wc wh wh wc bg w wc R wv bg bg bg bg bg wv R wv bg P bg w bg wv R wv bg bg bg bg bg wv R wc wh wh wh wh wh wc #0", 
+1:"wc wh wh wh wc w R wv bg bg bg wc wc R wv bg bg bg bg wv R wc wc bg P bg wv R w wv bg bg bg wv R w wc wh wh wh wc #0",
+2:"wc wh wh wh wh wc R wv bg bg bg bg wv R wv bg bg P bg wv R wv bg w w bg wv R wv bg bg bg bg wv R wc wh wh wh wh wc #0",
+3:"wc wh wh wh wh wc R wv bg bg bg bg wv R wc wc bg P bg wv R w wv bg bg bg wv R w wc wc bg bg wv R w w wc wh wh wc #0",
+4:"w w w wc wh wh wc R w wc wh wc bg bg wv R wc wc bg bg bg bg wv R wv P bg w w bg wv R wv bg bg w w bg wv R wc wc bg bg bg bg wv R w wc wh wh wh wh wc #0",
+5:"w w w wc wh wh wc R w w w wv bg bg wv R wc wh wh wc bg w wc R wv bg bg bg bg bg wv R wv bg P bg w bg wv R wv bg bg bg bg bg wv R wc wh wh wh wh wh wc #0",
 
-6:"w w wc wh wh wh wc R wc wh wc bg bg bg wv R wv bg bg bg bg bg wv R wv bg w w bg P wv R wv bg w w bg bg wv R wv bg bg bg bg bg wv R wc wh wh wh wh wh wc #1", 
-7:"wc wh wh wh wc w w R wv bg bg bg wc wc w R wv bg w bg bg wc wc R wv bg P bg bg bg wv R wv bg bg bg w bg wv R wv bg bg bg bg bg wv R wc wh wh wh wh wh wc #1", 
-8:"w wc wh wh wh wc w R wc wc bg bg bg wv w R wv bg bg w bg wc wc R wv bg bg bg bg bg wv R wv bg bg bg P bg wv R wv bg bg bg bg bg wv R wc wh wh wh wh wh wc #1", 
-9:"wc wh wh wh wh wc w R wv bg bg bg P wc wc R wv bg w bg bg bg wv R wv bg bg bg w bg wv R wc wc bg bg bg bg wv R w wv bg bg wc wh wc R w wc wh wh wc w w #1", 
-10:"wc wh wh wh wh wh wc R wv bg bg bg bg bg wv R wv bg P bg w bg wv R wv bg w bg bg bg wv R wv bg bg bg bg bg wv R wc wc bg bg bg bg wv R w wc wh wh wh wh wh wc #1", 
-
-
-11:"w w w wc wh wh wc R w w wc wc bg bg wv R wc wh wc bg bg bg wv R wv bg bg bg P bg wv R wc wc bg bg bg bg wv R w wv bg bg bg bg wv R w wc wh wh wh wh wc #2", 
-12:"w wc wh wh wh wh wc R wc wc bg bg bg bg wv R wv bg bg bg P bg wv R wv bg w bg bg bg wv R wv bg bg bg bg wc wc R wv bg bg bg bg wv w R wc wh wh wh wh wc w #2", 
-13:"wc wh wh wh wh wh wc R wv bg bg bg bg bg wv R wv bg bg bg w bg wv R wv bg bg bg bg bg wv R wv bg bg P w bg wv R wv bg bg bg bg bg wv R wc wh wh wh wh wh wc #2", 
-14:"w wc wh wh wh wh wc R wc wc bg bg bg bg wv R wv bg bg bg P bg wv R wv bg w bg bg bg wv R wv bg bg w bg bg wv R wc wc bg bg bg wc wc R w wc wh wh wh wc w #2", 
-15:"wc wh wh wh wh wh wc R wv bg bg bg bg bg wv R wv bg w w P bg wv R wv bg bg bg bg bg wv R wv bg w bg bg bg wv R wv bg bg bg bg bg wv R wc wh wh wh wh wh wc #2", 
-
-16:"wc wh wh wh wh wh wc R wv bg bg bg bg bg wv R wv bg w bg P bg wv R wv bg w bg w bg wv R wv bg bg bg bg bg wv R wc wc bg bg wc wh wc R w wc wh wh wc w w #3", 
-17:"wc wh wh wh wh wh wc R wv bg bg bg bg bg wv R wv bg bg bg bg bg wv R wv bg P bg bg bg wv R wv bg bg bg w bg wv R wv bg bg bg bg bg wv R wc wh wh wh wh wh wc #3", 
-18:"w w wc wh wh wh wc w R wc wh wc bg bg bg wv w R wv bg bg bg w bg wc wc R wv bg w w w bg bg wv R wv bg P bg bg bg bg wv R wv bg w w w bg bg wv R wv bg bg bg bg bg bg wv R wc wh wh wh wh wh wh wc #3", 
-19:"w wc wh wh wh wc wh wc R w wv bg bg bg w bg wv R wc wc bg w bg bg bg wv R wv bg bg bg bg bg bg wv R wv bg w bg bg P bg wv R wv bg bg bg w w bg wv R wc wh wc bg bg bg bg wv R w w wc wh wh wh wh wc #3", 
-20:"wc wh wh wh wh wh wh wc R wv bg bg bg bg bg bg wv R wv bg bg bg bg bg bg wv R wv bg bg w P bg bg wv R wv bg bg bg bg bg bg wv R wv bg bg bg bg bg bg wv R wv bg bg bg bg bg bg wv R wc wh wh wh wh wh wh wc #3", 
+6:"w w wc wh wh wh wc R wc wh wc bg bg bg wv R wv bg bg bg bg bg wv R wv bg w w bg P wv R wv bg w w bg bg wv R wv bg bg bg bg bg wv R wc wh wh wh wh wh wc #1",
+7:"wc wh wh wh wc w w R wv bg bg bg wc wc w R wv bg w bg bg wc wc R wv bg P bg bg bg wv R wv bg bg bg w bg wv R wv bg bg bg bg bg wv R wc wh wh wh wh wh wc #1",
+8:"w wc wh wh wh wc w R wc wc bg bg bg wv w R wv bg bg w bg wc wc R wv bg bg bg bg bg wv R wv bg bg bg P bg wv R wv bg bg bg bg bg wv R wc wh wh wh wh wh wc #1",
+9:"wc wh wh wh wh wc w R wv bg bg bg P wc wc R wv bg w bg bg bg wv R wv bg bg bg w bg wv R wc wc bg bg bg bg wv R w wv bg bg wc wh wc R w wc wh wh wc w w #1",
+10:"wc wh wh wh wh wh wc R wv bg bg bg bg bg wv R wv bg P bg w bg wv R wv bg w bg bg bg wv R wv bg bg bg bg bg wv R wc wc bg bg bg bg wv R w wc wh wh wh wh wh wc #1",
 
 
-21:"w wc wh wh wh wh wh wc R wc wc bg bg bg bg bg wv R wv bg bg w w w bg wv R wv bg bg bg bg w bg wv R wv bg w w bg w bg wv R wv bg bg bg bg bg bg wv R wc wh wh wc P bg wc wc R w w w wc wh wh wc w #4", 
-22:"w wc wh wh wh wc w w R w wv bg bg bg wc wh wc R w wv bg P bg bg bg wv R w wv bg bg bg w bg wv R wc wc bg w bg bg bg wv R wv bg bg w bg bg w wc R wv bg bg bg bg bg bg wv R wc wh wh wh wh wh wh wc #4", 
-23:"wc wh wh wh wh wh wh wc R wv bg bg bg bg bg bg wv R wv bg w w bg bg bg wv R wv bg w bg bg w bg wv R wv bg bg bg w w bg wv R wv bg bg bg P bg bg wv R wv bg bg bg bg bg wc wc R wc wh wh wh wh wh wc w #4", 
-24:"w wc wh wh wh wc w w R w wv bg bg bg wc wc w R wc wc bg w bg bg wc wc R wv bg bg bg w bg bg wv R wv bg P bg w w bg wv R wv bg bg bg bg bg bg wv R wc wh wc bg bg wc wh wc R w w wc wh wh wc w w #4", 
-25:"wc wh wh wh wc wh wh wc R wv bg bg bg w bg bg wv R wv bg w bg bg bg bg wv R wv bg bg bg bg bg bg wv R wv bg bg bg w bg bg wv R wv bg P bg bg bg bg wv R wv bg bg bg bg bg bg wv R wc wh wh wh wh wh wh wc #4", 
+11:"w w w wc wh wh wc R w w wc wc bg bg wv R wc wh wc bg bg bg wv R wv bg bg bg P bg wv R wc wc bg bg bg bg wv R w wv bg bg bg bg wv R w wc wh wh wh wh wc #2",
+12:"w wc wh wh wh wh wc R wc wc bg bg bg bg wv R wv bg bg bg P bg wv R wv bg w bg bg bg wv R wv bg bg bg bg wc wc R wv bg bg bg bg wv w R wc wh wh wh wh wc w #2",
+13:"wc wh wh wh wh wh wc R wv bg bg bg bg bg wv R wv bg bg bg w bg wv R wv bg bg bg bg bg wv R wv bg bg P w bg wv R wv bg bg bg bg bg wv R wc wh wh wh wh wh wc #2",
+14:"w wc wh wh wh wh wc R wc wc bg bg bg bg wv R wv bg bg bg P bg wv R wv bg w bg bg bg wv R wv bg bg w bg bg wv R wc wc bg bg bg wc wc R w wc wh wh wh wc w #2",
+15:"wc wh wh wh wh wh wc R wv bg bg bg bg bg wv R wv bg w w P bg wv R wv bg bg bg bg bg wv R wv bg w bg bg bg wv R wv bg bg bg bg bg wv R wc wh wh wh wh wh wc #2",
 
-26:"wc wh wh wh wc wh wh wc R wv bg bg w wv bg bg wv R wv bg bg bg wc bg bg wv R wv bg w bg bg bg bg wv R wv bg bg bg bg bg bg wv R wv bg P bg bg bg bg wv R wv bg bg bg w bg bg wv R wc wh wh wh wc wh wh wc #0", 
-27:"w wc wh wh wh wh wh wc R wc wc bg bg bg bg bg wv R wv bg bg bg bg w bg wv R wv bg w bg bg bg w wc R wv bg bg bg w bg bg wv R wv bg P w w w bg wv R wv bg bg bg bg bg bg wv R wc wh wh wh wh wh wh wc #0", 
-28:"wc wh wh wc wh wh wh wc R wv bg bg w bg bg bg wv R wv bg bg bg bg P bg wv R wv bg bg bg bg bg bg wv R wv bg bg w bg w bg wv R wv bg bg bg bg w bg wv R wv bg bg bg bg bg bg wv R wc wh wh wh wh wh wh wc #0", 
-29:"wc wh wh wc wc wh wh wc R wv bg bg w w bg bg wv R wv bg bg bg bg bg bg wv R wv bg bg bg P bg bg wv R wv bg bg bg bg bg bg wv R wv bg bg bg bg bg bg wv R wv bg bg bg bg bg bg wv R wc wh wh wh wh wh wh wc #0", 
-30:"wc wh wh wh wh wh wh wc R wv bg bg bg bg bg bg wv R wv bg bg bg w w bg wv R wc w bg bg w P bg wv R wc w bg bg bg bg bg wv R wv bg bg w bg bg bg wv R wv bg bg bg bg bg bg wv R wc wh wh wh wh wh wh wc #0", 
-
-
-31:"wc wh wh wh wh wh wh wh wc R wv bg bg bg bg bg bg bg wv R wv bg bg bg bg bg bg bg wv R wv bg bg bg bg bg P bg wv R wv bg bg bg bg bg bg bg wv R wv bg bg bg bg bg bg bg wv R wv bg bg bg bg bg bg bg wv R wc wh wh wh wh wh wh wh wc #1", 
-32:"wc wh wh wh wh wh wh wh wc R wv bg bg bg bg bg bg bg wv R wv bg w w w bg bg bg wv R wv bg bg bg w bg bg bg wv R wv bg bg bg w bg P bg wv R wv bg w bg w bg w bg wv R wv bg bg bg bg bg w bg wv R wv bg bg w bg bg bg bg wv R wc wh wh wc wh wh wh wh wc #1", 
-33:"w w w w wc wh wh wh wc R wc wh wh wh wc bg bg bg wv R wv bg bg bg bg bg P bg wv R wv bg bg w bg bg bg bg wv R wv bg bg bg w bg bg bg wv R wv bg w bg bg bg w bg wv R wv bg bg bg bg bg bg bg wv R wv bg bg w w bg bg wc wc R wc wh wh wc wc wh wh wc w #1", 
-34:"wc wh wh wh wh wh wh wh wc R wv bg bg bg bg bg bg bg wv R wv bg w w w w bg bg wv R wv bg bg bg bg bg bg w wc R wc wc P bg bg bg bg w wc R w wv bg bg w w bg bg wv R w wv bg bg bg bg bg bg wv R w wv bg bg bg bg bg bg wv R w wc wh wh wh wh wh wh wc #1", 
-35:"wc wh wh wh wc wh wh wh wc R wv bg bg bg w bg bg bg wv R wv bg w bg bg bg w bg wv R wv bg w w bg bg bg bg wv R wv bg bg bg bg w bg w wv R wv bg bg w bg P bg bg wv R wc wc bg bg bg bg bg bg wv R w wc wc bg bg wc wh wh wc R w w wc wh wh wc w w w #1", 
-
-36:"wc wh wh wh wh wh wh wc w R wv bg bg bg bg bg bg wv w R wv bg bg P bg w bg wc wc R wc wc bg bg bg w bg bg wv R w wv bg bg bg bg w bg wv R w wv bg bg bg bg w bg wv R w wc wc bg bg bg w bg wv R w w wv bg w bg bg bg wv R w w wc wh wc wh wh wh wc #2", 
-37:"wc wh wh wc wh wh wh wc w R wv bg bg w bg bg bg wc wc R wv bg bg bg bg w bg bg wv R wv bg w bg bg bg bg bg wv R wv bg bg bg w bg P bg wv R wc wc bg bg w bg bg bg wv R w wv bg bg bg bg bg bg wv R w wv bg bg bg bg bg bg wv R w wc wh wh wh wh wh wh wc #2", 
-38:"wc wh wh wh wc wh wh wh wc R wv bg bg bg w bg bg bg wv R wv bg w bg w bg P bg wv R wv bg bg bg bg bg bg bg wv R wc w bg bg bg bg bg bg wv R wv bg bg bg bg bg w bg wv R wv bg w w w bg bg bg wv R wv bg bg bg bg bg bg bg wv R wc wh wh wh wh wh wh wh wc #2", 
-39:"wc wh wh wc wh wh wh wh wc R wv bg bg w bg bg bg bg wv R wv bg bg w bg bg w bg wv R wv bg bg bg bg bg bg bg wv R wv bg bg bg P bg w w wc R wv bg bg bg bg bg bg bg wv R wv bg bg bg bg w bg bg wv R wv bg bg bg bg bg bg wc wc R wc wh wh wh wh wh wh wc w #2", 
-40:"wc wh wh wh wh wh wh wh wc R wv bg bg bg bg bg bg bg wv R wv bg bg bg bg bg P bg wv R wv bg bg bg bg bg bg bg wv R wv bg w bg w w bg bg wv R wv bg bg bg w w bg bg wv R wv bg bg bg bg bg bg bg wv R wc wh wh wh wh wh wh wh wc #2", 
+16:"wc wh wh wh wh wh wc R wv bg bg bg bg bg wv R wv bg w bg P bg wv R wv bg w bg w bg wv R wv bg bg bg bg bg wv R wc wc bg bg wc wh wc R w wc wh wh wc w w #3",
+17:"wc wh wh wh wh wh wc R wv bg bg bg bg bg wv R wv bg bg bg bg bg wv R wv bg P bg bg bg wv R wv bg bg bg w bg wv R wv bg bg bg bg bg wv R wc wh wh wh wh wh wc #3",
+18:"w w wc wh wh wh wc w R wc wh wc bg bg bg wv w R wv bg bg bg w bg wc wc R wv bg w w w bg bg wv R wv bg P bg bg bg bg wv R wv bg w w w bg bg wv R wv bg bg bg bg bg bg wv R wc wh wh wh wh wh wh wc #3",
+19:"w wc wh wh wh wc wh wc R w wv bg bg bg w bg wv R wc wc bg w bg bg bg wv R wv bg bg bg bg bg bg wv R wv bg w bg bg P bg wv R wv bg bg bg w w bg wv R wc wh wc bg bg bg bg wv R w w wc wh wh wh wh wc #3",
+20:"wc wh wh wh wh wh wh wc R wv bg bg bg bg bg bg wv R wv bg bg bg bg bg bg wv R wv bg bg w P bg bg wv R wv bg bg bg bg bg bg wv R wv bg bg bg bg bg bg wv R wv bg bg bg bg bg bg wv R wc wh wh wh wh wh wh wc #3",
 
 
-41:"", 
-42:"", 
-43:"", 
-44:"", 
-45:"", 
+21:"w wc wh wh wh wh wh wc R wc wc bg bg bg bg bg wv R wv bg bg w w w bg wv R wv bg bg bg bg w bg wv R wv bg w w bg w bg wv R wv bg bg bg bg bg bg wv R wc wh wh wc P bg wc wc R w w w wc wh wh wc w #4",
+22:"w wc wh wh wh wc w w R w wv bg bg bg wc wh wc R w wv bg P bg bg bg wv R w wv bg bg bg w bg wv R wc wc bg w bg bg bg wv R wv bg bg w bg bg w wc R wv bg bg bg bg bg bg wv R wc wh wh wh wh wh wh wc #4",
+23:"wc wh wh wh wh wh wh wc R wv bg bg bg bg bg bg wv R wv bg w w bg bg bg wv R wv bg w bg bg w bg wv R wv bg bg bg w w bg wv R wv bg bg bg P bg bg wv R wv bg bg bg bg bg wc wc R wc wh wh wh wh wh wc w #4",
+24:"w wc wh wh wh wc w w R w wv bg bg bg wc wc w R wc wc bg w bg bg wc wc R wv bg bg bg w bg bg wv R wv bg P bg w w bg wv R wv bg bg bg bg bg bg wv R wc wh wc bg bg wc wh wc R w w wc wh wh wc w w #4",
+25:"wc wh wh wh wc wh wh wc R wv bg bg bg w bg bg wv R wv bg w bg bg bg bg wv R wv bg bg bg bg bg bg wv R wv bg bg bg w bg bg wv R wv bg P bg bg bg bg wv R wv bg bg bg bg bg bg wv R wc wh wh wh wh wh wh wc #4",
 
-46:"", 
-47:"", 
-48:"", 
-49:"", 
-50:"", 
+26:"wc wh wh wh wc wh wh wc R wv bg bg w wv bg bg wv R wv bg bg bg wc bg bg wv R wv bg w bg bg bg bg wv R wv bg bg bg bg bg bg wv R wv bg P bg bg bg bg wv R wv bg bg bg w bg bg wv R wc wh wh wh wc wh wh wc #0",
+27:"w wc wh wh wh wh wh wc R wc wc bg bg bg bg bg wv R wv bg bg bg bg w bg wv R wv bg w bg bg bg w wc R wv bg bg bg w bg bg wv R wv bg P w w w bg wv R wv bg bg bg bg bg bg wv R wc wh wh wh wh wh wh wc #0",
+28:"wc wh wh wc wh wh wh wc R wv bg bg w bg bg bg wv R wv bg bg bg bg P bg wv R wv bg bg bg bg bg bg wv R wv bg bg w bg w bg wv R wv bg bg bg bg w bg wv R wv bg bg bg bg bg bg wv R wc wh wh wh wh wh wh wc #0",
+29:"wc wh wh wc wc wh wh wc R wv bg bg w w bg bg wv R wv bg bg bg bg bg bg wv R wv bg bg bg P bg bg wv R wv bg bg bg bg bg bg wv R wv bg bg bg bg bg bg wv R wv bg bg bg bg bg bg wv R wc wh wh wh wh wh wh wc #0",
+30:"wc wh wh wh wh wh wh wc R wv bg bg bg bg bg bg wv R wv bg bg bg w w bg wv R wc w bg bg w P bg wv R wc w bg bg bg bg bg wv R wv bg bg w bg bg bg wv R wv bg bg bg bg bg bg wv R wc wh wh wh wh wh wh wc #0",
+
+
+31:"wc wh wh wh wh wh wh wh wc R wv bg bg bg bg bg bg bg wv R wv bg bg bg bg bg bg bg wv R wv bg bg bg bg bg P bg wv R wv bg bg bg bg bg bg bg wv R wv bg bg bg bg bg bg bg wv R wv bg bg bg bg bg bg bg wv R wc wh wh wh wh wh wh wh wc #1",
+32:"wc wh wh wh wh wh wh wh wc R wv bg bg bg bg bg bg bg wv R wv bg w w w bg bg bg wv R wv bg bg bg w bg bg bg wv R wv bg bg bg w bg P bg wv R wv bg w bg w bg w bg wv R wv bg bg bg bg bg w bg wv R wv bg bg w bg bg bg bg wv R wc wh wh wc wh wh wh wh wc #1",
+33:"w w w w wc wh wh wh wc R wc wh wh wh wc bg bg bg wv R wv bg bg bg bg bg P bg wv R wv bg bg w bg bg bg bg wv R wv bg bg bg w bg bg bg wv R wv bg w bg bg bg w bg wv R wv bg bg bg bg bg bg bg wv R wv bg bg w w bg bg wc wc R wc wh wh wc wc wh wh wc w #1",
+34:"wc wh wh wh wh wh wh wh wc R wv bg bg bg bg bg bg bg wv R wv bg w w w w bg bg wv R wv bg bg bg bg bg bg w wc R wc wc P bg bg bg bg w wc R w wv bg bg w w bg bg wv R w wv bg bg bg bg bg bg wv R w wv bg bg bg bg bg bg wv R w wc wh wh wh wh wh wh wc #1",
+35:"wc wh wh wh wc wh wh wh wc R wv bg bg bg w bg bg bg wv R wv bg w bg bg bg w bg wv R wv bg w w bg bg bg bg wv R wv bg bg bg bg w bg w wv R wv bg bg w bg P bg bg wv R wc wc bg bg bg bg bg bg wv R w wc wc bg bg wc wh wh wc R w w wc wh wh wc w w w #1",
+
+36:"wc wh wh wh wh wh wh wc w R wv bg bg bg bg bg bg wv w R wv bg bg P bg w bg wc wc R wc wc bg bg bg w bg bg wv R w wv bg bg bg bg w bg wv R w wv bg bg bg bg w bg wv R w wc wc bg bg bg w bg wv R w w wv bg w bg bg bg wv R w w wc wh wc wh wh wh wc #2",
+37:"wc wh wh wc wh wh wh wc w R wv bg bg w bg bg bg wc wc R wv bg bg bg bg w bg bg wv R wv bg w bg bg bg bg bg wv R wv bg bg bg w bg P bg wv R wc wc bg bg w bg bg bg wv R w wv bg bg bg bg bg bg wv R w wv bg bg bg bg bg bg wv R w wc wh wh wh wh wh wh wc #2",
+38:"wc wh wh wh wc wh wh wh wc R wv bg bg bg w bg bg bg wv R wv bg w bg w bg P bg wv R wv bg bg bg bg bg bg bg wv R wc w bg bg bg bg bg bg wv R wv bg bg bg bg bg w bg wv R wv bg w w w bg bg bg wv R wv bg bg bg bg bg bg bg wv R wc wh wh wh wh wh wh wh wc #2",
+39:"wc wh wh wc wh wh wh wh wc R wv bg bg w bg bg bg bg wv R wv bg bg w bg bg w bg wv R wv bg bg bg bg bg bg bg wv R wv bg bg bg P bg w w wc R wv bg bg bg bg bg bg bg wv R wv bg bg bg bg w bg bg wv R wv bg bg bg bg bg bg wc wc R wc wh wh wh wh wh wh wc w #2",
+40:"wc wh wh wh wh wh wh wh wc R wv bg bg bg bg bg bg bg wv R wv bg bg bg bg bg P bg wv R wv bg bg bg bg bg bg bg wv R wv bg w bg w w bg bg wv R wv bg bg bg w w bg bg wv R wv bg bg bg bg bg bg bg wv R wc wh wh wh wh wh wh wh wc #2",
+
+
+41:"",
+42:"",
+43:"",
+44:"",
+45:"",
+
+46:"",
+47:"",
+48:"",
+49:"",
+50:"",
 }
 
 var reacted
@@ -541,4 +541,4 @@ read = (code, mesg, lvl) =>{
     mesg.channel.send(lvlembed)
 }
 
-bot.login(process.env.token)
+bot.login('NzY5OTcwNDk3NDI1MTEzMTAz.X5Ww5w.Rzm_Wl8BqbCLKRd2Cey-nOivPKs')
